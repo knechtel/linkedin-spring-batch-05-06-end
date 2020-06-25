@@ -48,7 +48,7 @@ public class LinkedinBatchApplication {
 	public ItemWriter<Order> itemWriter() {
 		return new JsonFileItemWriterBuilder<Order>()
 				.jsonObjectMarshaller(new JacksonJsonObjectMarshaller<Order>())
-				.resource(new FileSystemResource("/data/shipped_orders_output.json"))
+				.resource(new FileSystemResource(System.getProperty("user.dir")+"/data/shipped_orders_output.json"))
 				.name("jsonItemWriter")
 				.build();
 	}
