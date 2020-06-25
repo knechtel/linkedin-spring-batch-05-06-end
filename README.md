@@ -1,3 +1,6 @@
 # linkedin-spring-batch-04-06-end
 
-Write on file json
+
+Select data from Database then write on file json.
+
+
